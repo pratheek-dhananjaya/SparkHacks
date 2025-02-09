@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "7504b23e-ae75-46a4-bc95-4e5d679c9726",
+		"name": "Sparkhacks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32532624"
+	},
+	"item": [
+		{
+			"name": "registerDeliveryPersonnel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Addi\",\n    \"uin\" : 123436289,\n    \"phonenumber\" : \"8890209988\",\n    \"vehicletype\" : \"truck\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/registerDeliveryPersonnel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"registerDeliveryPersonnel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboardDelivery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uin\" : 123436789\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/dashboardDelivery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"dashboardDelivery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobCreation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productname\": \"Reuse Connect 2\",\n  \"productaddress\": \"852 Gadget Lane, Austin, TX\",\n  \"deliveryaddress\": \"741 Pine St, Seattle, WA\",\n  \"deliverycost\": 100.99,\n  \"clubname\": \"AI Enthusiast\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/jobCreation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"jobCreation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboardClubs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clubname\" : \"AI Enthusiasts\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "dashboardClubs",
+					"host": [
+						"dashboardClubs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clubProductCreation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clubname\": \"AI Enthusiast\",\n  \"productname\": \"Reuse Connect 2\",\n  \"price\": 599.99,\n  \"address\": \"852 Robotics St, Boston, MA\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/clubProductCreation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"clubProductCreation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboardBuyer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clubname\" : \"AI Enthusiasts\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/dashboardBuyer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"dashboardBuyer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deliveryConsignment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clubname\": \"AI Enthusiast\",\n    \"productname\": \"Reuse Connect 2\",\n    \"uin\" : 111111112\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/deliveryConsignment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"deliveryConsignment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
